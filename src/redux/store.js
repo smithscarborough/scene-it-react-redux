@@ -1,9 +1,15 @@
-import { createStore } from 'redux';
-import { movieReducer } from './reducers';
+import {applyMiddleware, compose, createStore} from 'redux';
+import { load, save } from 'redux-localstorage-simple';
+import {rootReducer} from './reducers';
 
-const store = createStore(
-  movieReducer,
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-);
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION__COMPOSE || compose;
 
-export default store;
+const middleware = composeEnhancers(applyMiddleware(
+    save()
+))
+
+export const store = createStore(
+    rootReducer,
+    load(),
+    middleware
+)

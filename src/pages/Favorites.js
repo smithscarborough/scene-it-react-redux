@@ -9,11 +9,11 @@ export default function Home() {
     const movies = useSelector(state => state)
     return (
         <>
-            <NavBar></NavBar>
-          <Typography variant="h1" align="center">Scene It!</Typography>
+        <NavBar></NavBar>
+          <Typography variant="h1" align="center">Favorites</Typography>
           <SearchForm />
           <Grid container spacing={3} style={{marginTop: '12px'}}>
-            {movies.results.map(movie => {
+            {movies.favorites.map(movie => {
               return (
                 <Grid key={movie.imdbID} item xs={4}>
                   <MovieCard movie={movie}/>

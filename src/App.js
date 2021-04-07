@@ -1,21 +1,21 @@
 import './App.css';
-import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom';
+import { Container } from '@material-ui/core';
+import Favorites from './pages/Favorites';
+import { BrowserRouter, Redirect, Route } from 'react-router-dom';
 import Home from './pages/Home';
 
 function App() {
   return (
-    <Router>
-      <div className="App">
-        <nav>
-          <Link to="/">Home</Link>
-        </nav>
-        <Switch>
-          <Route path="/" exact>
-            <Home />
-          </Route>
-        </Switch>
-      </div>
-    </Router>
+    <Container>
+      <BrowserRouter>
+        <Route exact path='/' component={Home} />
+        <Route path='/favorites' component={Favorites} />
+        <Route>
+          <Redirect to='/' />
+        </Route>
+      </BrowserRouter>
+      
+    </Container>
   );
 }
 
