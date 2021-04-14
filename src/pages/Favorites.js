@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 import NavBar from '../components/NavBar';
 import SearchForm from '../components/SearchForm';
 import MovieCard from '../components/MovieCard';
-import { Typography, Grid } from '@material-ui/core';
-import { useSelector } from 'react-redux';
+import {Typography, Grid} from '@material-ui/core';
+import {useSelector} from 'react-redux';
 
 export default function Home() {
     const movies = useSelector(state => state)
