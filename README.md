@@ -1,6 +1,6 @@
 # Scene It!
 
-## An application that allows users to search IMDB's movie database API for movies to add to their watchlist ("Favorites"), and save the list for later viewing using local storage.
+## A movie database search application that allows users to search for movies to add to their watchlist ("Favorites"), and save the movies using local storage for later viewing.
 
 ### Technologies used:
 * React
