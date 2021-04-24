@@ -1,3 +1,18 @@
+# Scene It!
+
+## An application that allows users to search IMDB's movie database API for movies to add to their watchlist ("Favorites"), and save the list for later viewing using local storage.
+
+### Search IMBDB's API for movies:
+<img width="1279" alt="Screen Shot 2021-04-24 at 1 30 42 PM" src="https://user-images.githubusercontent.com/68121283/115969173-479db400-a501-11eb-84f9-aa70971acb11.png">
+
+### Add movies to the "Favorites" list to watch later:
+<img width="1279" alt="Screen Shot 2021-04-24 at 1 31 41 PM" src="https://user-images.githubusercontent.com/68121283/115969259-bb3fc100-a501-11eb-9f22-920d4089e30a.png">
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
